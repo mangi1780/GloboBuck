@@ -14,8 +14,8 @@ let AddRestaurant = () => {
         <AddRestaurantHeader />
         <WhyShouldYouPWZ />
         <HowItWorks />
-        <SearchListedRestaurant />
-        <SmallBannerCard />
+        {/* <SearchListedRestaurant />
+        <SmallBannerCard /> */}
         <FrequentlyAskedQues />
         <AddRestaurantSec />
         <Footer />

@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route index element={<App />} />
       <Route path="/" element={<App />} />
-      <Route path="/add-restaurant" element={<AddRestaurant />} />
+      <Route path="/add-shop" element={<AddRestaurant />} />
       <Route path="/show-case" element={<ShowCase />} />
       <Route path="/user/:userId" element={<User />} />
       <Route path="/user/:userId/:hashId" element={<User />} />

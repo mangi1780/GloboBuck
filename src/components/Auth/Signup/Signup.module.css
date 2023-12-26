@@ -114,6 +114,10 @@
     margin: 0 10px;
 }
 
+.Sbtn{
+    background-color: var(--color-redish1);
+}
+
 .socialSignupBox {
     padding: 10px;
     margin: 10px 0;

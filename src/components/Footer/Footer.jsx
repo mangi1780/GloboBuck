@@ -15,14 +15,14 @@ let Footer = () => {
         <div className={footerCss.innerFooter}>
             <div className={footerCss.sec1}>
                 <div className={footerCss.logoBox}>GLOBOBUCK</div>
-                <div className={footerCss.filters}>
+                {/* <div className={footerCss.filters}>
                     <div className={footerCss.filterBox}> <span>
                         <img className={footerCss.icon} src={indianFlag} alt="india flag" />
                     </span>
                         <span>India</span>
                         <span className={footerCss.arrow} >&#709;</span></div>
                     <div className={footerCss.filterBox}><span>🌐<span></span> English</span> <span className={footerCss.arrow} >&#709;</span></div>
-                </div>
+                </div> */}
             </div>
             <div className={footerCss.sec2}>
                 <div className={[footerCss.box1, footerCss.box].join(' ')}>
@@ -33,13 +33,13 @@ let Footer = () => {
                     <a href="" className={footerCss.boxOpt}>Investor Relations</a>
                     <a href="" className={footerCss.boxOpt}>Report Fraud</a>
                 </div>
-                <div className={[footerCss.box2, footerCss.box].join(' ')}>
+                {/* <div className={[footerCss.box2, footerCss.box].join(' ')}>
                     <div className={footerCss.boxTtl}>GLOBOVERSE</div>
                     <a href="" className={footerCss.boxOpt}>GLOBOBUCK</a>
                     <a href="" className={footerCss.boxOpt}>Shoping India</a>
                     <a href="" className={footerCss.boxOpt}>Hyperpure</a>
                     <a href="" className={footerCss.boxOpt}>Globoland</a>
-                </div>
+                </div> */}
                 <div className={[footerCss.box3, footerCss.box].join(' ')}>
                     <div className={footerCss.boxTtl}>FOR Shops</div>
                     <a href="" className={footerCss.boxOpt}>Partner With Us</a>
@@ -75,7 +75,7 @@ let Footer = () => {
                         </a>
                     </div>
                     <a href='' className={footerCss.app}><img className={footerCss.appImg} src={Gstore} alt="google play store" /></a>
-                    <a href='' className={footerCss.app}><img className={footerCss.appImg} src={Appstore} alt="apple app store" /></a>
+                    {/* <a href='' className={footerCss.app}><img className={footerCss.appImg} src={Appstore} alt="apple app store" /></a> */}
                 </div>
             </div>
             <hr className={footerCss.breakLine} />

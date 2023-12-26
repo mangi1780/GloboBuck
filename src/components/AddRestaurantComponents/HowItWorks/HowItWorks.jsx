@@ -18,7 +18,7 @@ let HowItWorks = () => {
             <div className={css.div2}>
                 <div className={css.title}>How it works?</div>
                 <div className={css.cards}>
-                    <Card5 step='1' title='Create your page on GloboBuck' tag='Help users discover your place by creating a listing on GloboBuck' img={bookIcon} color='#FFFCF1' />
+                    <Card5 step='1' title='Register your shop on GloboBuck' tag='Help users discover your place by creating a listing on GloboBuck' img={bookIcon} color='#FFFCF1' />
                     <Card5 step='2' title='Register youself for shopping' tag='And sell to millions of customers with ease' img={bikeIcon} color='#FFF5F6' />
                     <Card5 step='3' title='Start receiving orders' tag='Manage orders on our partner app, web dashboard or API partners' img={packageIcon} color='#FFF9F1' />
                 </div>

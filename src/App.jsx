@@ -14,12 +14,13 @@ import nightlifeandclubsImg from '/images/nightlifeandclubs.jpg'
 import css from './App.module.css'
 
 import { orderOnlinePage, diningOutPage, proAndProPlusPage, nightLifePage } from './helpers/constants';
+import HowItWorks from './components/AddRestaurantComponents/HowItWorks/HowItWorks'
 
 function App() {
 
   return <>
     <HomePageBanner />
-    <div className={css.bodySize}>
+    {/* <div className={css.bodySize}>
       <div className={css.chooseTypeCards}>
         <SmallCard imgSrc={orderOnlineImg} text="Order Online" link={"/show-case?page=" + orderOnlinePage} />
         <SmallCard imgSrc={diningoutImg} text="Dining Out" link={'/show-case?page=' + diningOutPage} />
@@ -28,9 +29,10 @@ function App() {
       </div>
       <Collections />
       <PopularPlaces />
-    </div>
+    </div> */}
+    <HowItWorks/>
     <GetTheApp />
-    <ExploreOptionsNearMe />
+    {/* <ExploreOptionsNearMe /> */}
     <Footer />
   </>
 }

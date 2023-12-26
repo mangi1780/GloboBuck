@@ -12,7 +12,7 @@ let AddRestaurantHeader = () => {
     let [toogleMenu, setToggleMenu] = useState(true);
 
     let toggleBanner = toogleMenu ? (<div className={css.banner}>
-        <Navbar setToggleMenu={setToggleMenu} toogleMenu={toogleMenu} page="add-restaurant" />
+        <Navbar setToggleMenu={setToggleMenu} toogleMenu={toogleMenu} page="add-shop" />
         <div className={css.bannerInner}>
             <img src={banner} alt="banner" className={css.bannerImg} />
             <div className={css.bannerTxt}>

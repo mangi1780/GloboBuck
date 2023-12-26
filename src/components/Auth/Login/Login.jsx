@@ -26,7 +26,7 @@ let Login = ({ setAuth, setLoggedIn }) => {
                 <input className={loginCss.phoneInp} type="tel" placeholder='Phone number ...' onChange={(e) => setPhone(e.target.value)} />
                 <button  className={phone?.length === 10 ? [loginCss.btn, loginCss.Sbtn].join(" ") : loginCss.btn} onClick={()=> phone?.length === 10 ? setOTPModal(true) : ""}>Send OTP</button>
             </div>
-            <div className={loginCss.orBreak}><span className={loginCss.orBreakText}>or</span></div>
+            {/* <div className={loginCss.orBreak}><span className={loginCss.orBreakText}>or</span></div>
             <div className={loginCss.socialSignupBox}>
                 <img className={loginCss.icon} src={mailLogo} alt="email signup" />
                 Continue with Email
@@ -34,9 +34,9 @@ let Login = ({ setAuth, setLoggedIn }) => {
             <div className={loginCss.socialSignupBox}>
                 <img className={loginCss.icon} src={gLogo} alt="google signup" />
                 Continue with Google
-            </div>
+            </div> */}
             <hr className={loginCss.break} />
-            <div className={loginCss.newToZomato}>New to Zomato? <div className={loginCss.createAcc} onClick={() => setAuth({ closed: false, login: false, signup: true })}>Create Account</div></div>
+            <div className={loginCss.newToZomato}>New to GloboBuck? <div className={loginCss.createAcc} onClick={() => setAuth({ closed: false, login: false, signup: true })}>Create Account</div></div>
         </div>
     </div> :  <EnterOTP setModal={setOTPModal} setLoggedIn={setLoggedIn} setAuth={setAuth} />
     return createPortal(loginDiv, document.getElementById('modal'));
