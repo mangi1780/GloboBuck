@@ -38,3 +38,19 @@
         padding: 0px;
     }
 }
+
+.btn {
+    background-color: rgb(156, 156, 156);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    width: 30%;   
+    height: 50px;
+    font-size: 150%;
+}
+
+.btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

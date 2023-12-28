@@ -11,7 +11,7 @@ import comment from '/icons/message.png'
 import close from '/icons/close.png'
 
 const UserReviewedCard = (props) => {
-    let {imgSrc, title, address, stars, days, votes, comments, id, userImg} = props?.data;
+    let {imgSrc, title, address, owner, about, stars, days, votes, comments, id, userImg} = props?.data;
     let [alertBoxCss, setAlertBoxCss] = useState([css.alertBox, css.dnone].join(' '));
     let [liked, setLiked] = useState(false);
     let [toggleDropDown, setToggleDropDown] = useState(false);
@@ -50,15 +50,16 @@ const UserReviewedCard = (props) => {
                     <div className={css.downArrow} onClick={toggleDropdown}><img className={css.downArrowImg} src={downArrowImg} alt='down arrow' /></div>
                     {toggleDropDown ? <div className={css.dropDown}>
                         <div className={css.opt}>Edit</div>
-                        <div className={css.opt}>Delete</div>
+                        <div className={css.opt}>Details</div>
                     </div>:null}
                 </div>
             </div>
             <div  className={css.sec}>
-                <span className={css.delivery}> <div className={css.starDiv}>{stars} <img src={starImg} className={css.starIcon} alt='star' /></div> <span className={css.delTxt}>Delivery</span></span>
-                <span className={css.days}>{days} days</span>
+                {/* <span className={css.delivery}> <div className={css.starDiv}>{stars} <img src={starImg} className={css.starIcon} alt='star' /></div> <span className={css.delTxt}>Delivery</span></span> */}
+                <span className={css.days}>Owner  - {owner}</span>
+                
             </div>
-            <div className={css.sec}>
+            {/* <div className={css.sec}>
                 <div className={css.txt}>{votes} Votes for helpful, {comments} Comments</div>
             </div>
             <div className={css.sec}>
@@ -74,7 +75,7 @@ const UserReviewedCard = (props) => {
                     <img src={shareImg} alt='share' className={css.icon} />
                     <span className={css.txt2}>Share</span>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
     {toggleCommentBox ? <div className={css.commentBox}>

@@ -26,10 +26,10 @@ let Signup = ({ setAuth }) => {
                 </span>
             </div>
             <div className={signupCss.lgBox}>
-                <input className={signupCss.inpBox} type="text" placeholder='Full Name ...' />
-                <input className={signupCss.inpBox} type="email" placeholder='Phone ...' onChange={(e) => setPhone(e.target.value)}/>
+                <input className={signupCss.inpBox} type="text" placeholder='Full Name ...' required/>
+                <input className={signupCss.inpBox} type="email" placeholder='Phone ...' onChange={(e) => setPhone(e.target.value)} required/>
                 <span className={signupCss.termsTxt}>
-                    <input type="checkbox" name="accpect" id="accpect" className={signupCss.checkBox} />
+                    <input type="checkbox" name="accpect" id="accpect" className={signupCss.checkBox} required/>
                     <span>
                         I agree to GloboBuck's <a href="" className={signupCss.termaAnchor}>Terms of Service, Privacy Policy</a> and <a href="" className={signupCss.termaAnchor}>Content Policies</a>
                     </span>

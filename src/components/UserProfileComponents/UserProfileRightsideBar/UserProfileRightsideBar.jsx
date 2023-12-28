@@ -5,7 +5,8 @@ import css from './UserProfileRightsideBar.module.css'
 
 import {reviewPage, photosPage, followersPage, recentlyviewedPage, bookmarksPage, blogpostsPage, orderhistoryPage, myaddressPage, favoriteordersPage, bookingsPage} from '../../../helpers/constants'
 
-import ImgSrc from '/images/proandproplus.jpg';
+//import ImgSrc from '/images/proandproplus.jpg';
+import ImgSrc from '/images/11697.jpg';
 
 import UserReviewedCard from '../../../utils/UserProfileUtils/UserProfile/Activity/UserReviewedCard/UserReviewedCard'
 import UserPhotosCard from '../../../utils/UserProfileUtils/UserProfile/Activity/UserPhotosCard/UserPhotosCard'
@@ -26,8 +27,10 @@ let UserProfileRightsideBar = () => {
 
     let data = [{
         imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
+        title: "Anil Steel Store",
+        address: "Indiranagar, Lucknow",
+        owner : "Rakesh Kumar",
+        about : "Test About",
         stars: 5,
         days: 10,
         votes: 10,
@@ -38,8 +41,10 @@ let UserProfileRightsideBar = () => {
     },
     {
         imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
+        title: "Galaxy Mobile Store",
+        address: "Jodhpur, Raj",
+        owner : "Rakesh Kumar",
+        about : "Test About",
         stars: 5,
         days: 10,
         votes: 10,
@@ -49,8 +54,10 @@ let UserProfileRightsideBar = () => {
         userId: userId,
     },{
         imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
+        title: "Saroj Enterprise",
+        address: "Gomti Nagar, Lucknow",
+        owner : "Rakesh Kumar",
+        about : "Test About",
         stars: 5,
         days: 10,
         votes: 10,
@@ -58,62 +65,64 @@ let UserProfileRightsideBar = () => {
         id: 123,
         userImg: ImgSrc,
         userId: userId,
-    },{
-        imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
-        stars: 5,
-        days: 10,
-        votes: 10,
-        comments: 2,
-        id: 123,
-        userImg: ImgSrc,
-        userId: userId,
-    },{
-        imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
-        stars: 5,
-        days: 10,
-        votes: 10,
-        comments: 2,
-        id: 123,
-        userImg: ImgSrc,
-        userId: userId,
-    },{
-        imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
-        stars: 5,
-        days: 10,
-        votes: 10,
-        comments: 2,
-        id: 123,
-        userImg: ImgSrc,
-        userId: userId,
-    },{
-        imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
-        stars: 5,
-        days: 10,
-        votes: 10,
-        comments: 2,
-        id: 123,
-        userImg: ImgSrc,
-        userId: userId,
-    },{
-        imgSrc: ImgSrc,
-        title: "Paradise Biryani",
-        address: "Kukatpally, Hyd",
-        stars: 5,
-        days: 10,
-        votes: 10,
-        comments: 2,
-        id: 123,
-        userImg: ImgSrc,
-        userId: userId,
-    }]
+    }
+    // },{
+    //     imgSrc: ImgSrc,
+    //     title: "Paradise Biryani",
+    //     address: "Kukatpally, Hyd",
+    //     stars: 5,
+    //     days: 10,
+    //     votes: 10,
+    //     comments: 2,
+    //     id: 123,
+    //     userImg: ImgSrc,
+    //     userId: userId,
+    // },{
+    //     imgSrc: ImgSrc,
+    //     title: "Paradise Biryani",
+    //     address: "Kukatpally, Hyd",
+    //     stars: 5,
+    //     days: 10,
+    //     votes: 10,
+    //     comments: 2,
+    //     id: 123,
+    //     userImg: ImgSrc,
+    //     userId: userId,
+    // },{
+    //     imgSrc: ImgSrc,
+    //     title: "Paradise Biryani",
+    //     address: "Kukatpally, Hyd",
+    //     stars: 5,
+    //     days: 10,
+    //     votes: 10,
+    //     comments: 2,
+    //     id: 123,
+    //     userImg: ImgSrc,
+    //     userId: userId,
+    // },{
+    //     imgSrc: ImgSrc,
+    //     title: "Paradise Biryani",
+    //     address: "Kukatpally, Hyd",
+    //     stars: 5,
+    //     days: 10,
+    //     votes: 10,
+    //     comments: 2,
+    //     id: 123,
+    //     userImg: ImgSrc,
+    //     userId: userId,
+    // },{
+    //     imgSrc: ImgSrc,
+    //     title: "Paradise Biryani",
+    //     address: "Kukatpally, Hyd",
+    //     stars: 5,
+    //     days: 10,
+    //     votes: 10,
+    //     comments: 2,
+    //     id: 123,
+    //     userImg: ImgSrc,
+    //     userId: userId,
+    // 
+]
 
    useEffect(() => {
     switch(hashId){
@@ -154,9 +163,13 @@ let UserProfileRightsideBar = () => {
 
     return <div className={css.outerDiv}>
         <div className={css.innerDiv}>
-            <div className={css.title}>Reviews</div>
+            <div className={css.title}>Registered Shops</div>
             <div className={css.contectBox}>
                 { currComp }
+            </div>
+            <div className={css.btndiv}>
+            <button className={css.btn}>Add Shop</button>
+
             </div>
         </div>
     </div>

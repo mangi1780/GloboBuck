@@ -13,12 +13,12 @@ import userImg from '/images/koushil.jpg';
 const User = () => {
 
     let data1 = [ 
-        {title: "Reviews", hash: "reviews"},
-        {title: "Photos", hash: "photos"},
-        {title: "Followers", hash: "followers"},
-        {title: "Recently Viewed", hash: "recently-viewed"},
-        {title: "Bookmarks", hash: "bookmarks"},
-        {title: "Blog Posts", hash: "blog-posts"}
+        {title: "Registered Shops", hash: "registeredshops"},
+        // {title: "Photos", hash: "photos"},
+        // {title: "Followers", hash: "followers"},
+        // {title: "Recently Viewed", hash: "recently-viewed"},
+        // {title: "Bookmarks", hash: "bookmarks"},
+        // {title: "Blog Posts", hash: "blog-posts"}
     ];
     let data2 = [ 
         {title: "Order History", hash: "order-history"},
@@ -49,18 +49,18 @@ const User = () => {
       <Navbar />
     </div>
     <div className={css.box}>
-      <UserHero />
+      {/* <UserHero /> */}
       <div className={css.mainbody}>
-        <div className={css.leftBox}>
-          <LeftSideCardPanel name='ACTIVITY' data={data1} />
-          <LeftSideCardPanel name='ONLINE ORDERING' data={data2} />
+        {/* <div className={css.leftBox}> */}
+          {/* <LeftSideCardPanel name='Activity' data={data1} /> */}
+          {/* <LeftSideCardPanel name='ONLINE ORDERING' data={data2} />
           <LeftSideCardPanel name='TABLE BOOKING' data={data5} />
-          <SuggestedFollowCard name='SUGGESTED FOODIES TO FOLLOW' data={data3} />
-          <ProfileWidget name='ZOMATO PROFILE WIDGET' tag="Showcase your Zomato profile on your blog." data={data4} />
-        </div>
-        <div className={css.rightBox}>
+          <SuggestedFollowCard name='SUGGESTED FOODIES TO FOLLOW' data={data3} /> */}
+          {/* <ProfileWidget name='ZOMATO PROFILE WIDGET' tag="Showcase your Zomato profile on your blog." data={data4} /> */}
+        {/* </div> */}
+        {/* <div className={css.rightBox}> */}
           <UserProfileRightsideBar />
-        </div>
+        {/* </div> */}
       </div>
     </div>
   </div>)

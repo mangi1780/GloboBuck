@@ -29,11 +29,11 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, page }) => {
         <img className={css.menuBar} src={menuBar} alt='menu bar' onClick={() => setToggleMenu(val => !val)} />
         <div className={css.navbarInner}>
             <div className={css.leftSide}>
-                <img src={mobileHand} alt="mobile in hand icon" className={css.img} />
-                <Link to='/get-the-app' className={css.appTxt}>Get The App</Link>
+                {/* <img src={mobileHand} alt="mobile in hand icon" className={css.img} /> */}
+                {/* <Link to='/get-the-app' className={css.appTxt}>Get The App</Link> */}
             </div>
             <div className={css.rightSide}>
-                {page !== 'add-shop' ? <Link to='/add-shop' className={css.menuItem} >Add Shop</Link> : ''}
+                {/* {page !== 'add-shop' ? <Link to='/add-shop' className={css.menuItem} >Add Shop</Link> : ''} */}
                 {loggedIn ? (<div className={css.menuItem}>
                     <div className={css.profile} onClick={() => setMenuDisplay(val => !val)}>
                         <img src={profilePic} alt="profile pic" className={css.profilePic} />

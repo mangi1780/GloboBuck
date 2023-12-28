@@ -19,7 +19,7 @@ let HomePageBanner = () => {
                 <div className={css.title}>GLOBOBUCK</div>
                 <div className={css.tag}>Rewarding your loyalty to local shops.<span className={css.bld}>....</span></div>
                 <div className={css.searchbar}>
-                    <SearchBar />
+                    {/* <SearchBar /> */}
                 </div>
             </div>
         </div>
